@@ -1,20 +1,54 @@
-# wails-sveltekit
+# dr2telemetory
 
-## About
+Telemetory Viewer for DiRT Rally 2.0
 
-A template using SvelteKit
+![](images/screenshot.png)
 
-## Building
+# Install
 
-scoop install nvm
-nvm list available
-winget install Microsoft.EdgeWebView2Runtime
+## STEP.1
 
-To build this project in debug mode, use `wails build`. For production, use `wails build -production`.
-To generate a platform native package, add the `-package` flag.
+edit: "%USERPROFILE%\Documents\My Games\DiRT Rally 2.0\hardwaresettings\hardware_settings_config.xml"
 
-## Live Development
+before:
 
-To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
-directory and run `npm run dev`. The frontend dev server will run on http://localhost:34115. Connect to this
-in your browser and connect to your application.
+```
+<udp enabled="false" extradata="0" ip="127.0.0.1" port="20777" delay="1" />
+```
+
+after:
+
+```
+<udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" />
+```
+
+## STEP.2
+
+Download and All Extract ZIP archive.
+
+edit: params.json
+
+```json
+{
+  "port": 20777,
+  "lock2lock": 540,
+  "window_x": 483,
+  "window_y": 589,
+  "window_w": 230,
+  "window_h": 120
+}
+```
+
+- The "port" must match between params.json and hardware_settings_config.xml.
+- Set "lock2lock" to the operating range of your handle controller.
+- other params saved automaticaly.
+
+## Start
+
+1. open `dr2telemetpry.exe`
+2. Start and enjoy "DiRT Rally 2.0" !
+
+# Behavier
+
+- After 15 seconds, the telemetry display will be hidden behind.
+- It will appear in the foreground when telemetry display is required.
