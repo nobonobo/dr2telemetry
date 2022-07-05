@@ -1,0 +1,11 @@
+{
+  "name": "dr2telemetory",
+  "outputfilename": "dr2telemetory",
+  "assetdir": "frontend/build",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "author": {
+    "name": "Irieda Noboru",
+    "email": "irieda@144lab.com"
+  }
+}
