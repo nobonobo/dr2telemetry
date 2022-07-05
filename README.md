@@ -35,7 +35,7 @@ after:
 
 ## STEP.2
 
-Download and All Extract ZIP archive.
+Download [ZIP-file](https://github.com/nobonobo/dr2telemetory/releases/download/v1.0.0/dr2telemetory-win64-v1.0.0.zip) and All Extract ZIP archive.
 
 edit: params.json
 
@@ -56,7 +56,27 @@ edit: params.json
 
 # Build from Source
 
-...
+STEP.1 `go` install
+
+```shell
+winget install GoLang.Go
+```
+
+STEP.2 `wails` install
+
+```shell
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
+```
+
+STEP.3 source clone and build
+
+```shell
+git clone https://github.com/nobonobo/dr2telemetory
+cd dr2telemetory
+wails build
+```
+
+Output: dr2telemetory/build/bin/dr2telemetory.exe
 
 # Start
 
@@ -66,4 +86,5 @@ edit: params.json
 # Behavier
 
 - After 15 seconds, the telemetry display will be hidden behind.
-- It will appear in the foreground when telemetry display is required.
+- The location and size of the window is saved when the display is hidden.
+- It will restore in the foreground when telemetry display is required.
