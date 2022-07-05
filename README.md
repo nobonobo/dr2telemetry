@@ -4,6 +4,17 @@ Telemetory Viewer for DiRT Rally 2.0
 
 ![](images/screenshot.png)
 
+#　 Prerequires
+
+Runtime and Delvelepment
+
+- [WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)
+
+Development
+
+- [Go](https://go.dev/)
+- [Wails v2](https://wails.io/)
+
 # Install
 
 ## STEP.1
@@ -43,7 +54,11 @@ edit: params.json
 - Set "lock2lock" to the operating range of your handle controller.
 - other params saved automaticaly.
 
-## Start
+# Build from Source
+
+...
+
+# Start
 
 1. open `dr2telemetpry.exe`
 2. Start and enjoy "DiRT Rally 2.0" !
