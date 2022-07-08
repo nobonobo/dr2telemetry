@@ -4,7 +4,7 @@
   let Brake = 100.0;
   let Throttle = 100.0;
   let Steer = 0;
-  runtime.EventsOn("telemetory", (data, deg) => {
+  runtime.EventsOn("telemetry", (data, deg) => {
     //console.log(data);
     if (data.Gear == 0) {
       Gear = "N";

@@ -19,7 +19,7 @@ func main() {
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "dr2telemetory",
+		Title:  "dr2telemetry",
 		Width:  230,
 		Height: 120,
 		// MinWidth:          720,

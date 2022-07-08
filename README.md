@@ -1,6 +1,6 @@
-# dr2telemetory
+# dr2telemetry
 
-Telemetory Viewer for DiRT Rally 2.0
+Telemetry Viewer for DiRT Rally 2.0
 
 ![](images/screenshot.png)
 
@@ -35,7 +35,7 @@ after:
 
 ## STEP.2
 
-Download [ZIP-file](https://github.com/nobonobo/dr2telemetory/releases/download/v1.0.0/dr2telemetory-win64-v1.0.0.zip) and All Extract ZIP archive.
+Download [ZIP-file](https://github.com/nobonobo/dr2telemetry/releases/download/v1.0.0/dr2telemetry-win64-v1.0.0.zip) and All Extract ZIP archive.
 
 edit: params.json
 
@@ -71,16 +71,16 @@ go install github.com/wailsapp/wails/v2/cmd/wails@latest
 STEP.3 source clone and build
 
 ```shell
-git clone https://github.com/nobonobo/dr2telemetory
-cd dr2telemetory
+git clone https://github.com/nobonobo/dr2telemetry
+cd dr2telemetry
 wails build
 ```
 
-Output: dr2telemetory/build/bin/dr2telemetory.exe
+Output: dr2telemetry/build/bin/dr2telemetry.exe
 
 # Start
 
-1. open `dr2telemetpry.exe`
+1. open `dr2telemetry.exe`
 2. Start and enjoy "DiRT Rally 2.0" !
 
 # Behavier

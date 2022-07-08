@@ -55,7 +55,7 @@ func (a *App) handle(ctx context.Context, c *net.UDPConn) {
 		packet := b[:n]
 		var pkt codemasters.DirtPacket
 		pkt.Decode(packet)
-		runtime.EventsEmit(ctx, "telemetory", pkt, a.config.Lock2Lock)
+		runtime.EventsEmit(ctx, "telemetry", pkt, a.config.Lock2Lock)
 		a.Kick()
 		log.Printf("%#v", pkt)
 	}
